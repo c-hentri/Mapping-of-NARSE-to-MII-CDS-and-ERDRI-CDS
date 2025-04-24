@@ -1,0 +1,80 @@
+﻿source_data_element;source_vocabulary;source_vocabulary_category;target_data_element;target_vocabulary;target_vocabulary_category;mapping_relationship
+Diagnosis Rare Disease(s): ORPHAcode;NARSE;Formal Criteria;Condition.code.coding | Condition.code.coding:icd10-gm | Condition.code.coding:alpha-id | Condition.code.coding:sct |Condition.code.coding:orphanet;MII;MII IG Diagnose v2025;Equivalent
+ICD Diagnosis Rare Disease(s): code;NARSE;Formal Criteria;Condition.code.coding | Condition.code.coding:icd10-gm | Condition.code.coding:alpha-id | Condition.code.coding:sct |Condition.code.coding:orphanet;MII;MII IG Diagnose v2025;Equivalent
+ICD Diagnosis Rare Disease(s): Version;NARSE;Formal Criteria;Condition.code.coding:icd10-gm.version;MII;MII IG Diagnose v2025;Exact
+Diagnostic Diagnosis Rare Disease(s): certainty;NARSE;Formal Criteria;Condition.code.coding:icd10-gm.extension:Diagnosesicherheit;MII;MII IG Diagnose v2025;Narrow-to-broader-term
+Age group at inclusion;NARSE;Formal Personal and family background;NULL;MII;NULL;Equivalent
+Biological sex at birth;NARSE;Formal Personal and family background;NULL;MII;NULL;Wrong
+Administrative Gender;NARSE;Formal Personal and family background;Patient.gender;MII;MII IG Person v2025;Equivalent
+Current Status: Date;NARSE;Formal Personal and family background;Observation.effectiveDateTime;MII;MII IG Person v2025;Exact
+Current status: Status;NARSE;Formal Personal and family background;Patient.deceasedBoolean;MII;MII IG Person v2025;Equivalent
+Age at death;NARSE;Formal Personal and family background;Patient.deceasedDateTime;MII;MII IG Person v2025;Equivalent
+Died of RD;NARSE;Formal Personal and family background;NULL;MII;NULL;Equivalent
+Other cause of death;NARSE;Formal Personal and family background;Condition.code;MII;MII IG Person v2025;Equivalent
+Affected family members: Relation;NARSE;Formal Personal and family background;FamilyMemberHistory.relationship;MII;MII IG MolGen v2025 DE;Broader-to-narrow-term
+Affected family members: Rare disease;NARSE;Formal Personal and family background;FamilyMemberHistory.condition;MII;MII IG MolGen v2025 DE;Broader-to-narrow-term
+Affected family members: Deceased?;NARSE;Formal Personal and family background;FamilyMemberHistory.deceased.deceasedBoolean;MII;MII IG MolGen v2025 DE;Exact
+Age at first symptoms;NARSE;Anamnesis and diagnostics;Condition.onset[x]:onsetPeriod.start |Condition.onset[x]:onsetPeriod.start.extension:lebensphase-von;MII;MII IG Symptom DE v2024;Broader-to-narrow-term
+Age at first symptoms: Years + Months;NARSE;Anamnesis and diagnostics;Conditon.onsetPeriod.start;MII;MII IG Symptom DE v2024;Equivalent
+Age at diagnosis;NARSE;Anamnesis and diagnostics;Condtion.recordedDate;MII;MII IG Diagnose v2025;Broader-to-narrow-term
+Age at diagnosis: Years + Months;NARSE;Anamnesis and diagnostics;Condtion.recordedDate;MII;MII IG Diagnose v2025;Equivalent
+Diagnostics;NARSE;Anamnesis and diagnostics;Procedure.code.coding | Condition.evidence.code;MII;"MII IG Prozedur v2025
+MII IG Diagnose v2025";Equivalent
+Genetic diagnosis: Affected gene;NARSE;Anamnesis and diagnostics;DiagnosticReport.category:Genetics.coding;MII;MII IG MolGen v2025 DE;Equivalent
+Genetic diagnosis: Gene variant;NARSE;Anamnesis and diagnostics;LogicalModelMolGen.Ergebnisse.Veraenderungen;MII;MII IG MolGen v2025 DE;Equivalent
+Phenotype: HPO term;NARSE;Anamnesis and diagnostics;Symptom.Condition.Code | Symptom.Observation.Code;MII;MII IG Symptom DE v2024;Equivalent
+Laboratory diagnostics: Laboratory parameter;NARSE;Anamnesis and diagnostics;DiagnosticReport.category.coding:loinc-lab | DiagnosticReport.code.coding;MII;MII IG Laborbefund DE v2025;Broader-to-narrow-term
+Other diagnostics;NARSE;Anamnesis and diagnostics;Procedure.code.coding:ops | Procedure.code.coding:sct | Procedure.code.text;MII;MII IG Prozedur v2025;Equivalent
+Therapy status;NARSE;Anamnesis and diagnostics;Procedure.code.coding:ops | Procedure.code.coding:sct;MII;MII IG Prozedur v2025;Equivalent
+Other specific therapy;NARSE;Anamnesis and diagnostics;Procedure.code.text;MII;MII IG Prozedur v2025;Equivalent
+First name(s);NARSE;Identifying data;Patient.name.given;MII;MII IG Person v2025;Exact
+Last name(s);NARSE;Identifying data;Patient.name.family.extension.nachname;MII;MII IG Person v2025;Exact
+Birth name;NARSE;Identifying data;Patient.name.use;MII;MII IG Person v2025;Exact
+Date of birth;NARSE;Identifying data;Patient.birthDate;MII;MII IG Person v2025;Exact
+Place of birth;NARSE;Identifying data;NULL;MII;NULL;Wrong
+Address;NARSE;Identifying data;Patient.address;MII;MII IG Person v2025;Exact
+Diagnosis Rare Disease(s): ORPHAcode;NARSE;Formal Criteria;Diagnosis of the rare disease;ERDRI;Diagnosis;Equivalent
+ICD Diagnosis Rare Disease(s): code;NARSE;Formal Criteria;Diagnosis of the rare disease;ERDRI;Diagnosis;Equivalent
+ICD Diagnosis Rare Disease(s): Version;NARSE;Formal Criteria;NULL;ERDRI;NULL;Wrong
+Diagnostic Diagnosis Rare Disease(s): certainty;NARSE;Formal Criteria;NULL;ERDRI;NULL;Wrong
+Age group at inclusion;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Equivalent
+Biological sex at birth;NARSE;Formal Personal and family background;Sex;ERDRI;Personal Information;Broader-to-narrow-term
+Administrative Gender;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Current Status: Date;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Current status: Status;NARSE;Formal Personal and family background;Patient's status;ERDRI;Patient status;Exact
+Age at death;NARSE;Formal Personal and family background;Date of death;ERDRI;Patient status;Equivalent
+Died of RD;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Other cause of death;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Affected family members: Relation;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Affected family members: Rare disease;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Affected family members: Deceased?;NARSE;Formal Personal and family background;NULL;ERDRI;NULL;Wrong
+Age at first symptoms;NARSE;Anamnesis and diagnostics;Age at onset;ERDRI;Disease history;Equivalent
+Age at first symptoms: Years + Months;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Equivalent
+Age at diagnosis;NARSE;Anamnesis and diagnostics;Age at diagnosis;ERDRI;Disease history;Equivalent
+Age at diagnosis: Years + Months;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Equivalent
+Diagnostics;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Wrong
+Genetic diagnosis: Affected gene;NARSE;Anamnesis and diagnostics;Genetic diagnosis;ERDRI;Diagnosis;Equivalent
+Genetic diagnosis: Gene variant;NARSE;Anamnesis and diagnostics;Genetic diagnosis;ERDRI;Diagnosis;Equivalent
+Phenotype: HPO term;NARSE;Anamnesis and diagnostics;Undiagnosed case;ERDRI;Diagnosis;Equivalent
+Laboratory diagnostics: Laboratory parameter;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Wrong
+Other diagnostics;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Wrong
+Therapy status;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Wrong
+Other specific therapy;NARSE;Anamnesis and diagnostics;NULL;ERDRI;NULL;Wrong
+First name(s);NARSE;Identifying data;NULL;ERDRI;NULL;Wrong
+Last name(s);NARSE;Identifying data;NULL;ERDRI;NULL;Wrong
+Birth name;NARSE;Identifying data;NULL;ERDRI;NULL;Wrong
+Date of birth;NARSE;Identifying data;Date of birth;ERDRI;Personal Information;Exact
+Place of birth;NARSE;Identifying data;NULL;ERDRI;NULL;Wrong
+Address;NARSE;Identifying data;NULL;ERDRI;NULL;Wrong
+Pseudonym;ERDRI;Pseudonym;Pseudonym;NARSE;Identifying data;Exact
+Date of birth;ERDRI;Personal Information;Date of birth;NARSE;Identifying data;Exact
+Sex;ERDRI;Personal Information;Biological sex at birth;NARSE;Formal Personal and family background;Narrow-to-broader-term
+Patient's Status;ERDRI;Patient Status;Current status: Status;NARSE;Formal Personal and family background;Equivalent
+Date of death;ERDRI;Patient Status;Age at death;NARSE;Formal Personal and family background;Narrow-to-broader-term
+First contact with specialised centre;ERDRI;Care pathway;NULL;NARSE;NULL;Wrong
+Age at onset;ERDRI;Disease history;Age at first symptoms;NARSE;Anamnesis and diagnostics;Equivalent
+Age at diagnosis;ERDRI;Disease history;Age at diagnosis;NARSE;Anamnesis and diagnostics;Equivalent
+Diagnosis of the rare disease;ERDRI;Diagnosis;Diagnosis Rare Disease(s): ORPHAcode | ICD Diagnosis Rare Disease(s): code;NARSE;Formal Criteria;Broader-to-narrow-term
+Genetic diagnosis;ERDRI;Diagnosis;Genetic diagnosis: Affected gene | Genetic diagnosis: Gene variant;NARSE;Anamnesis and diagnostics;Equivalent
+Undiagnosed case;ERDRI;Diagnosis;Phenotype: HPO term;NARSE;Anamnesis and diagnostics;Equivalent
+Classification of functioning/disability;ERDRI;Disability;NULL;NARSE;NULL;Wrong
